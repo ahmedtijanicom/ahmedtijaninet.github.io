@@ -35,7 +35,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-main);
     font-weight: 700;
     line-height: 1.2;
@@ -117,7 +122,8 @@ img {
     max-height: 40px;
     width: auto;
     display: block;
-    filter: invert(1); /* FIX: Invert black logo to white */
+    filter: invert(1);
+    /* FIX: Invert black logo to white */
 }
 
 .profile-pic {
@@ -188,7 +194,8 @@ nav {
     transition: var(--transition);
 }
 
-.lang-btn:hover, .lang-btn.active {
+.lang-btn:hover,
+.lang-btn.active {
     color: var(--text-color);
     font-weight: 700;
 }
@@ -206,7 +213,8 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px; /* Header height */
+    padding-top: 80px;
+    /* Header height */
 }
 
 .hero-content h1 {
@@ -240,6 +248,57 @@ nav {
 #about p {
     font-size: 1.2rem;
     line-height: 1.8;
+}
+
+/* TECH STACK SECTION */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tech-category {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.tech-category:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-5px);
+}
+
+.tech-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tech-tags span {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: var(--transition);
+    cursor: default;
+}
+
+.tech-tags span:hover {
+    border-color: var(--text-color);
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 /* PRODUCTS SECTION */
@@ -354,7 +413,8 @@ footer {
 
 /* RTL SUPPORT */
 [dir="rtl"] {
-    font-family: 'Tahoma', 'Segoe UI', sans-serif; /* Better font for Arabic */
+    font-family: 'Tahoma', 'Segoe UI', sans-serif;
+    /* Better font for Arabic */
 }
 
 [dir="rtl"] .btn {
@@ -372,7 +432,7 @@ footer {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .nav-links {
         position: fixed;
         top: 0;
@@ -407,7 +467,7 @@ footer {
         display: block;
         z-index: 1001;
     }
-    
+
     .wide-card {
         padding: 2rem;
     }

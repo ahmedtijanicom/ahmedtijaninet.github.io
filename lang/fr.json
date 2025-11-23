@@ -25,5 +25,13 @@
     "hobbies_title": "Loisirs",
     "hobbies_desc": "Explorer les modèles d'IA localement sur du matériel avancé comme un passe-temps d'apprentissage et d'expérimentation personnel.",
     "contact_title": "Contactez-moi",
+    "tech_title": "Stack Technique",
+    "cat_languages": "Langages & Frameworks",
+    "cat_cloud": "Cloud & DevOps",
+    "cat_databases": "Bases de Données",
+    "cat_design": "Design & Multimédia",
+    "cat_ai": "IA & Données",
+    "cat_tools": "Outils & Contrôle de Version",
+    "cat_servers": "Serveurs & Hébergement",
     "footer_text": "© 2025 Ahmed Tijani — DigitalSeventy. Tous droits réservés."
 }
