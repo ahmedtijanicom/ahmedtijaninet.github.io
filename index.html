@@ -1,39 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="utf-8">
-     <title>Ahmed TIJANI | Software Engineer & AI Innovator</title>
-     <link rel="stylesheet" type="text/css" href="app.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed TIJANI — DigitalSeventy</title>
+    <meta name="description" content="Ahmed TIJANI — Software Engineer & AI Innovator. Founder of DigitalSeventy. Building intelligent ecosystems.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700;800&family=Tahoma&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-     <div class="loading-screen">
-          <div class="inner">
-               <div class="text-box">
-                    <h3>Ahmed TIJANI</h3> 
-                    <div class="social-icons">
-                         <a href="https://www.linkedin.com/in/ahmedtijanicom/" class="social-icon linkedin">
-                              <i class="fab fa-linkedin"></i>
-                         </a>
-                         <a href="https://x.com/ahmedtijanicom" class="social-icon twitter">
-                              <i class="fab fa-x-twitter"></i>
-                         </a>
-                         <a href="https://facebook.com/ahmedtijanicom/" class="social-icon facebook">
-                              <i class="fab fa-facebook"></i>
-                         </a>
-                         <a href="https://www.instagram.com/ahmedtijanicom/" class="social-icon instagram">
-                              <i class="fab fa-instagram"></i>
-                         </a>
-                    </div>
-                    <h5>SOFTWARE ENGINEER & AI INNOVATOR</h5>
-                    <p class="role">Founder of <a href="https://digitalseventy.com" class="company-link" target="_blank">DigitalSeventy <i class="fas fa-external-link-alt"></i></a></p>
-                    <div class="tagline">Where Digital Seeds Flourish</div>
 
-               </div>
-               <div class="line-frame">
-                    <div class="line"></div>
-               </div>
-          </div>
-     </div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><img src="logo.svg" alt="Ahmed Tijani Logo"></a>
+                
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+
+                <div class="menu-toggle" id="mobile-menu">☰</div>
+                <ul class="nav-links">
+                    <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#products" data-i18n="nav_products">Products</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+        <div class="container hero-content">
+            <img src="profile.jpeg" alt="Ahmed Tijani" class="profile-pic">
+            <h1 data-i18n="hero_title">Ahmed TIJANI</h1>
+            <h2 data-i18n="hero_subtitle">Software Engineer & AI Innovator<br>Founder of DigitalSeventy</h2>
+            <span class="tagline" data-i18n="hero_tagline">Where Digital Seeds Flourish</span>
+            <div class="cta-buttons">
+                <a href="#products" class="btn" data-i18n="btn_work">My Work</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="btn_contact">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-i18n="about_title">About Me</h2>
+            <p data-i18n="about_text1">
+                I’m Ahmed Tijani, a software engineer and AI innovator building advanced systems that help companies automate workflows, organize data, and turn information into operational power.
+            </p>
+            <p data-i18n="about_text2">
+                Through my company DigitalSeventy, I design flexible and intelligent business tools that solve real problems for modern organizations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 data-i18n="products_title">Products</h2>
+            <div class="products-grid">
+                <!-- 70ERP -->
+                <div class="card">
+                    <h3 data-i18n="p1_title">70ERP</h3>
+                    <p data-i18n="p1_desc">A flexible ERP that allows companies to build internal apps without coding, supported by an intelligent AI assistant that adapts to each business.</p>
+                </div>
+                <!-- SeventyBuilder -->
+                <div class="card">
+                    <h3 data-i18n="p2_title">SeventyBuilder</h3>
+                    <p data-i18n="p2_desc">Turns any file into a complete web, mobile, or desktop app automatically. No coding required. Fully customizable with visual tools.</p>
+                </div>
+                <!-- SeventyCalls -->
+                <div class="card">
+                    <h3 data-i18n="p3_title">SeventyCalls</h3>
+                    <p data-i18n="p3_desc">An automated communication system that speaks English, Arabic, French, and Spanish naturally. Handles customer calls 24/7 with full context.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OpenSeventy Section -->
+    <section id="openseventy" class="section">
+        <div class="container">
+            <div class="wide-card">
+                <h3 data-i18n="openseventy_title">OpenSeventy</h3>
+                <p data-i18n="openseventy_desc">OpenSeventy is a free open-source toolkit for small and medium businesses, offering simple and practical utilities for data conversion, automation, reporting, and system integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="section">
+        <div class="container">
+            <h2 data-i18n="vision_title">Vision</h2>
+            <p data-i18n="vision_desc">DigitalSeventy aims to build an intelligent ecosystem where businesses can transform processes into automation, data into applications, and communication into smart AI-driven systems.</p>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <h2 data-i18n="hobbies_title">Hobbies</h2>
+            <p data-i18n="hobbies_desc">Exploring AI models locally on advanced hardware as a personal learning and experimentation hobby.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 data-i18n="contact_title">Get In Touch</h2>
+            <div class="social-links">
+                <a href="https://instagram.com/ahmedtijanicom" target="_blank">Instagram</a>
+                <a href="https://web.facebook.com/ahmedtijanicom" target="_blank">Facebook</a>
+                <a href="https://x.com/ahmedtijanicom" target="_blank">X (Twitter)</a>
+                <a href="https://www.linkedin.com/in/ahmedtijanicom/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="emails">
+                <a href="mailto:ahmedtijani.net@gmail.com">ahmedtijani.net@gmail.com</a>
+                <a href="mailto:ahmedtijani@digitalseventy.com">ahmedtijani@digitalseventy.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p data-i18n="footer_text">&copy; 2025 Ahmed Tijani — DigitalSeventy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- External JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
